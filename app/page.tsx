@@ -69,7 +69,7 @@ export default function Home() {
             reader.onloadend = () => {
                 setUploadedImage(reader.result as string);
                 setAppState('image-uploaded');
-                setGeneratedImages({}); // Clear previous results
+                setGeneratedImages({});
             };
             reader.readAsDataURL(file);
         }
